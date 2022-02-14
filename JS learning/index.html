@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ^2 -->
+    <p>
+        <h2>Возведение в степень</h2>
+        Введите число <input type="text" name="" id="inp1"><br>
+        <button onclick="pow2()">x^2</button><br>
+        Результат: <span id="result"></span>
+    </p>
+
+    <!-- random number -->
+    <p>
+        <h2>Генерация рандомного числа</h2>
+        <button onclick="genrand()">СГЕНЕРИРОВАТЬ</button><br>
+        Результат: <span id="result2"></span>
+    </p>
+
+    <!-- repeated action -->
+    <p>
+        <h2>Цикл for()</h2>
+        Введите кол-во повторов <input type="text" name="" id="repeatTimes"><br>
+        <button onclick="repeatedAction()"  >Начать повторение</button><br>
+        Результат: <span id="result3"></span>
+    </p>
+    <p>
+        <h2>Цикл while()</h2>
+        Введите кол-во повторов <input type="text" name="" id="repeatTimesW"><br>
+        <button onclick="repeatedActionW()"  >Начать повторение</button><br>
+        Результат: <span id="result4"></span>
+    </p>
+    <!-- Цыкл с таймером -->
+        <h2>Цикл с таймером</h2>
+        Введите кол-во повторов <input type="text" name="" id="repeatTimesTimer"><br>
+        <button onclick="repeatedActionTimer()">Начать повторение</button><br>
+        Результат: <span id="result5"></span>
+
+
+    <!-- массив -->
+            <h1><marquee behavior="alternate" direction="left" scroll >МАССИВЫ</marquee></h1>
+    <p>
+
+        <h2>Запись и стирание данных массива</h2>
+        Введите то, что хотите запсать в массив <input type="text" id="inpMassive1"><br>
+        <button onclick='massive1In("inpMassive1")'>Push</button><button onclick='massive1Pop()'>Pop</button><button onclick='massive1ClearAll()'>Стереть всё</button><br>
+        Результат: <span id="result6"></span>
+    </p>
+    <p>
+        <h2>Слайдер</h2>
+        <div id="slider1">
+            <div id="polosa1">
+                <img src="img/1164347_instagram_logo_media_network_new_icon.png" alt="" width="128px">
+                <img src="img/294709_circle_twitter_icon.png" alt="" width="128px">
+                <img src="img/317714_video_youtube_icon.png" alt="" width="128px">
+                <img src="img/317752_facebook_social media_social_icon.png" alt="" width="128px">
+                <img src="img/4202002_apps_google_googleplay_play_logo_icon.png" alt="" width="128px">
+                <img src="img/4375116_logo_twitch_icon.png" alt="" width="128px">
+                <img src="img/1298745_google_brand_branding_logo_network_icon.png" alt="" width="128px">
+            </div>
+        </div>
+        <button onclick="slider1Left()">Left</button><button onclick='slider1Right()' class="right">Right</button>
+    </p>
+
+    <!--  -->
+    <!-- Добавить применение this -->
+    <!--  -->
+
+    <p>
+        <h2>CSS generator</h2>
+        <span class="cssGenSpan">border-radius: <input type="range" min="0" max="50" id="cssGeneratorInBR" value="0"></span><br>
+        <span class="cssGenSpan">height: <input type="range" min="200" max="400" id="cssGeneratorInHeight" value="0"></span><br>
+        <span class="cssGenSpan">width: <input type="range" min="200" max="400" id="cssGeneratorInWidth" value="0"></span><br>
+        <span class="cssGenSpan">border-width: <input type="range" min="0" max="15" id="cssGeneratorInBorderWidth" value="0"></span>
+
+        <!-- Сделать изменение цвета (rgb(x, y, z)) -->
+        <hr>
+        <div id="cssGeneratorVisible"></div>
+        <hr>
+        <textarea id="cssGenOut"></textarea>
+    </p>
+   
+
+
+</body>
+</html>
