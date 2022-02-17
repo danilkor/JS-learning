@@ -46,15 +46,7 @@
         Результат: <span id="result5"></span>
 
 
-    <!-- массив -->
-            <h1><marquee behavior="alternate" direction="left" scroll >МАССИВЫ</marquee></h1>
-    <p>
-
-        <h2>Запись и стирание данных массива</h2>
-        Введите то, что хотите запсать в массив <input type="text" id="inpMassive1"><br>
-        <button onclick='massive1In("inpMassive1")'>Push</button><button onclick='massive1Pop()'>Pop</button><button onclick='massive1ClearAll()'>Стереть всё</button><br>
-        Результат: <span id="result6"></span>
-    </p>
+    
     <p>
         <h2>Слайдер</h2>
         <div id="slider1">
@@ -71,14 +63,11 @@
         <button onclick="slider1Left()">Left</button><button onclick='slider1Right()' class="right">Right</button>
     </p>
     <p>
-        
-    </p>
-    <p>
         <h2>CSS generator</h2>
-        <span class="cssGenSpan">border-radius: <input type="range" min="0" max="50" id="cssGeneratorInBR" value="0"></span><br>
-        <span class="cssGenSpan">height: <input type="range" min="200" max="400" id="cssGeneratorInHeight" value="0"></span><br>
-        <span class="cssGenSpan">width: <input type="range" min="200" max="400" id="cssGeneratorInWidth" value="0"></span><br>
-        <span class="cssGenSpan">border-width: <input type="range" min="0" max="15" id="cssGeneratorInBorderWidth" value="0"></span>
+        <div class="cssGenSpan">border-radius: <input type="range" min="0" max="50" id="cssGeneratorInBR" value="0"></div><br>
+        <div class="cssGenSpan">height: <input type="range" min="200" max="400" id="cssGeneratorInHeight" value="0"></div><br>
+        <div class="cssGenSpan">width: <input type="range" min="200" max="400" id="cssGeneratorInWidth" value="0"></div><br>
+        <div class="cssGenSpan">border-width: <input type="range" min="0" max="15" id="cssGeneratorInBorderWidth" value="0"></div>
 
         <!-- Сделать изменение цвета (rgb(x, y, z)) -->
         <hr>
@@ -86,5 +75,32 @@
         <hr>
         <textarea id="cssGenOut"></textarea>
     </p>
+    <p>
+        <h2>radiobutton</h2>
+        <div><input type="radio" name="yesNo" value="yes">Да</div>
+        <div><input type="radio" name="yesNo" value="no">Нет</div>
+        <button onclick='radioButtonSubmit()'>...</button>
+    </p>
+   
+
+    <!-- массивы -->
+    <h1><marquee behavior="alternate" direction="left" scroll >МАССИВЫ</marquee></h1>
+    <!-- Индексные -->
+    <p>
+        <h2>Запись и стирание данных массива</h2>
+        Введите то, что хотите запсать в массив <input type="text" id="inpMassive1"><br>
+        <button onclick='massive1In("inpMassive1")'>Push</button><button onclick='massive1Pop()'>Pop</button><button onclick='massive1ClearAll()'>Стереть всё</button><br>
+        Результат: <span id="result6"></span>
+    </p>
+
+    <!-- Ассоциативные -->
+    <p>
+        <h2>Мини витрина</h2>
+        <div class="miniShopOut" id="miniShopOut"></div>
+    </p>
+
+    
+    
+
 </body>
 </html>

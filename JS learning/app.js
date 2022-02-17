@@ -181,18 +181,142 @@ border-width: ${document.getElementById('cssGeneratorInBorderWidth').value}px;`
 }
 
 //this
-var thisSpan;
-thisSpan = document.getElementsByTagName('span');
-for(let i = 0; i < thisSpan.length; i++) {
-    thisSpan.onclick = spanFunc;
+var spanFromHTML = document.getElementsByTagName('span');
+console.log(spanFromHTML);
+for(let i = 0; i < spanFromHTML.length; i++) {
+    spanFromHTML[i].onclick = spanFunc;
 }
 
 function spanFunc() {
-    alert(`Да, результат = ${this.innerHTML}`)
+    console.log(this.innerHTML)
+    p = this;
+    // p.style.color = 'red';
+    // p.style.fontWeight = 'bold'
+    setTimeout(function () {
+        // p.style.color = 'black';
+        // p.style.fontWeight = 'normal';
+        clearTimeout()
+        console.log('abrakadabra');
+    }, 800)
+}
+
+//Radi Buttons
+function radioButtonSubmit() {
+    var m = document.getElementsByName('yesNo');
+    console.log(m);
+    for(let i = 0; i < m.length; i++) {
+        if(m[i].checked){
+
+            //Ветвление switch case.
+            switch (m[i].value){
+                case "yes":
+                    str = "нет";
+                    console.log(str);
+                    alert(str);
+                    break;
+                case "no":
+                    str = "да";
+                    console.log(str);
+                    alert(str);
+                    break;       
+            }
+        }
+    }
 }
 
 
+//Ассоциативный массив
+//   // // var m=[4, 12, 'hello'];
+//   // console.log( m )
 
+    //Объявление ассоциативного массива
+//   var m = {};
+//   var n = {
+//  	"one" : 12,
+//   	"hello" : "world",
+//   	"prim" : 2000,
+//   	"double key": 777
+//   };
 
+    //Обращение к нему
+//   n.one = 9000;
+//   // console.log(n['prim']);
+//   // console.log(n.one);
+//   // console.log (n.double key); //ошибка
+//   console.log( n['double key'] );
+//   var ppp = 'hello';
+//   // n.ppp //ошибке
+//   console.log(n[ppp]);
 
     
+//   var out = document.getElementById('out');
+    //for(var key in n) обращается к каждому элементу массива n. 
+//   for (var key in n){
+//   	out.innerHTML += key +' ---- '+n[key]+ '<br> ';
+//  }
+
+//Мини магазин
+function bbc() {
+    var goods = {
+        "00001": {
+            "name": "Огурец",
+            "cost": 20,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/16-cucumber-128.png",
+            "inStock": "Есть на складе"
+        },
+        "00002": {
+            "name": "Помидор",
+            "cost": 30,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/12-tomato-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00003": {
+            "name": "Банан",
+            "cost": 40,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00004": {
+            "name": "Яблоко",
+            "cost": 10,
+            "img": "https://media.istockphoto.com/vectors/watercolor-red-apples-vector-id1183700913?b=1&k=20&m=1183700913&s=170x170&h=Hey0vHg4Hvc_wNScloeRFL_SEqbi9MCahsZqet_UBx0=",
+            "inStock": "Есть на складе"
+        },
+        "00005": {
+            "name": "Огурец",
+            "cost": 20,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/16-cucumber-128.png",
+            "inStock": "Есть на складе"
+        },
+        "00006": {
+            "name": "Помидор",
+            "cost": 30,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/12-tomato-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00007": {
+            "name": "Банан",
+            "cost": 40,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00008": {
+            "name": "Яблоко",
+            "cost": 10,
+            "img": "https://media.istockphoto.com/vectors/watercolor-red-apples-vector-id1183700913?b=1&k=20&m=1183700913&s=170x170&h=Hey0vHg4Hvc_wNScloeRFL_SEqbi9MCahsZqet_UBx0=",
+            "inStock": "Есть на складе"
+        }
+    }
+    console.log(goods);
+    var outForMiniShop = "";
+    for(var key in goods){
+        outForMiniShop +='<div class="minishop"><b>' + goods[key].name + "</b><br>";
+        outForMiniShop +='<img src = "' + goods[key].img + '" width="128px"><br>';
+        outForMiniShop +='Цена: ' + goods[key].cost + "<br>";
+        outForMiniShop +=goods[key].inStock + "</div>";
+        console.log(outForMiniShop);
+       
+    }
+    document.getElementById('miniShopOut').innerHTML = outForMiniShop;
+}
+bbc();
