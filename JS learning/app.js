@@ -180,6 +180,17 @@ width: ${document.getElementById('cssGeneratorInWidth').value}px;
 border-width: ${document.getElementById('cssGeneratorInBorderWidth').value}px;`
 }
 
+//this
+var thisSpan;
+thisSpan = document.getElementsByTagName('span');
+for(let i = 0; i < thisSpan.length; i++) {
+    thisSpan.onclick = spanFunc;
+}
+
+function spanFunc() {
+    alert(`Да, результат = ${this.innerHTML}`)
+}
+
 
 
 
