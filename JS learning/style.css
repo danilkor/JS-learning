@@ -179,3 +179,10 @@ input[type=range]:focus::-ms-fill-upper {
     text-align: center;
     width: 23%;
 }
+
+.mouseFunctions {
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    background: red;
+}

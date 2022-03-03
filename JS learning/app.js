@@ -305,6 +305,102 @@ function bbc() {
             "cost": 50,
             "img": "https://cdn4.iconfinder.com/data/icons/vegetables-60/48/Vegetable_corn_food_vegetable-128.png",
             "inStock": "Есть на складе"
+        },
+        "00009": {
+            "name": "Огурец",
+            "cost": 20,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/16-cucumber-128.png",
+            "inStock": "Есть на складе"
+        },
+        "00010": {
+            "name": "Помидор",
+            "cost": 30,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/12-tomato-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00011": {
+            "name": "Банан",
+            "cost": 40,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00012": {
+            "name": "Яблоко",
+            "cost": 10,
+            "img": "https://media.istockphoto.com/vectors/watercolor-red-apples-vector-id1183700913?b=1&k=20&m=1183700913&s=170x170&h=Hey0vHg4Hvc_wNScloeRFL_SEqbi9MCahsZqet_UBx0=",
+            "inStock": "Есть на складе"
+        },
+        "00013": {
+            "name": "Пигурец",
+            "cost": 25,
+            "img": "https://cdn2.iconfinder.com/data/icons/video-game-items-concepts-line-art/128/loot-box-ol-128.png",
+            "inStock": "Такого не бывает"
+        },
+        "00014": {
+            "name": "Лимон",
+            "cost": 1000000,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_limao-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00015": {
+            "name": "Картошка",
+            "cost": 5,
+            "img": "https://cdn0.iconfinder.com/data/icons/vegetables-ii-color/290/08-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00016": {
+            "name": "Кукуруза",
+            "cost": 50,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-60/48/Vegetable_corn_food_vegetable-128.png",
+            "inStock": "Есть на складе"
+        },
+        "00017": {
+            "name": "Огурец",
+            "cost": 20,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/16-cucumber-128.png",
+            "inStock": "Есть на складе"
+        },
+        "00018": {
+            "name": "Помидор",
+            "cost": 30,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-58/48/12-tomato-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00019": {
+            "name": "Банан",
+            "cost": 40,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00020": {
+            "name": "Яблоко",
+            "cost": 10,
+            "img": "https://media.istockphoto.com/vectors/watercolor-red-apples-vector-id1183700913?b=1&k=20&m=1183700913&s=170x170&h=Hey0vHg4Hvc_wNScloeRFL_SEqbi9MCahsZqet_UBx0=",
+            "inStock": "Есть на складе"
+        },
+        "00021": {
+            "name": "Пигурец",
+            "cost": 25,
+            "img": "https://cdn2.iconfinder.com/data/icons/video-game-items-concepts-line-art/128/loot-box-ol-128.png",
+            "inStock": "Такого не бывает"
+        },
+        "00022": {
+            "name": "Лимон",
+            "cost": 1000000,
+            "img": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_limao-128.png",
+            "inStock": "Ожидается поставка"
+        },
+        "00023": {
+            "name": "Картошка",
+            "cost": 5,
+            "img": "https://cdn0.iconfinder.com/data/icons/vegetables-ii-color/290/08-128.png",
+            "inStock": "Больше не продаётся"
+        },
+        "00024": {
+            "name": "Кукуруза",
+            "cost": 50,
+            "img": "https://cdn4.iconfinder.com/data/icons/vegetables-60/48/Vegetable_corn_food_vegetable-128.png",
+            "inStock": "Есть на складе"
         }
     }
     console.log(goods);
@@ -320,3 +416,13 @@ function bbc() {
     document.getElementById('miniShopOut').innerHTML = outForMiniShop;
 }
 bbc();
+
+// СОБЫТИЯ МЫШИ
+    var mouseFunctions = document.getElementsByClassName('mouseFunctions');
+    //click 
+    mouseFunctions.onclick = function (){
+        this.style.background = 'green';
+    }
+
+    //doubleClick
+    
